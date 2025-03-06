@@ -1,0 +1,87 @@
+/* 
+Google Maps Styles
+ */
+ #map {
+  border: 3px solid black;
+  margin-top: 10%;
+  height: 50%;
+}
+
+#main-container {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0 auto;
+}
+
+
+/* AI Research Page Styling */
+.body-container-ai {
+  width: 100%;
+  max-width: 100%;
+  margin: auto 0;
+  padding: .5em;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+img:hover {
+  cursor: wait;
+}
+
+
+#toBot {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: #85B7C0;
+}
+
+p#gb-text{
+  text-decoration: underline;
+  margin-top: -1.5em;
+  margin-bottom: 2em;
+}
+
+p#gb-text:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#ai-research {
+  width: 80%;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+article {
+  background: white;
+  padding: 1.2em;
+  margin: 1.2em 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+article h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+article p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  #ai-research {
+      width: 95%;
+  }
+
+  article {
+      padding: .5em;
+  }
+}

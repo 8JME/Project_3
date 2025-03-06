@@ -1,0 +1,360 @@
+/* Navigation bar */
+#navbar {
+  font-family: "Sigmar", Arial;
+  font-weight: 200;
+  font-style: normal;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 157, 255);
+  text-align: center;
+  padding: 10px 0;
+  min-height: 170px;
+  z-index: 1000;
+}
+
+/* Logo container */
+#logo-container {
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px 0;
+}
+
+/* Logo */
+#logo {
+  height: 50px;
+}
+
+/* Navigation container */
+#nav-container {
+  text-align: center;
+  padding-top: 5px;
+}
+
+/* Remove default list styling */
+#nav-container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation items */
+#nav-container ul li {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Selected tab */
+#nav-container ul li#on-select-tab a {
+  color: rgb(0, 157, 255);
+  background-color: #fff;
+  border-radius: 25% 10%;
+}
+
+/* Navigation links */
+#nav-container ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 12px;
+  display: block;
+}
+
+/* Hover effect */
+#nav-container ul li a:hover {
+  text-decoration: underline .25em;
+}
+
+/* Ensure body content starts below navbar */
+.body-container {
+  padding: 0 15px;
+  margin-top: 60%; /* Always pushes content below the navbar */
+}
+
+/* Tablet & Desktop View (768px and larger) */
+@media screen and (min-width: 768px) {
+  #navbar {
+      text-align: left;
+      padding: 0;
+      min-height: 60px; /* Navbar height is reduced for larger screens */
+      width: 100%;
+      top: 0;
+      left: 0;
+  }
+
+  /* Left-align the logo */
+  #logo-container {
+      float: left;
+      text-align: left;
+      margin: 0;
+      padding: 10px 20px;
+  }
+
+  #nav-container {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    height: fit-content; /* Allows the element to maintain natural height */
+    text-align: center;
+}
+
+  #nav-container ul {
+      display: inline-block;
+      text-align: center;
+  }
+
+  #nav-container ul li {
+      display: inline-block;
+      margin: 0 15px;
+  }
+
+  /* Adjust margin for content in larger screens */
+  .body-container {
+      margin-top: 10%; /* Matches the smaller navbar */
+  }
+}
+
+/* Content */
+h1 {
+  font-family: "Sigmar", Arial;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Timmana", Garamond;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.125em;
+}
+
+.mt, h3:nth-child(1) {
+  margin-top: 2.375em;
+}
+
+p {
+  font-family: "Poppins", "Courier New";
+  font-weight: 200;
+  font-style: normal;
+  margin: .5em;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+a:hover,a.dd-underline p:hover {
+  text-decoration: underline rgb(0, 157, 255) .25em;
+  margin-left: 1em;
+}
+
+span#bold-text {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+div#greet {
+  text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 3% 0;
+}
+
+ul.lists {
+  list-style-type: square;
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Resume Page Styling */
+.body-container-resume {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #e0e0e0; /* Light gray background */
+  text-align: center; /* Ensures content stays centered */
+  padding-top: 180px; /* Pushes content below navbar */
+}
+
+/* Background layer behind the resume */
+.resume-background {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 20% auto;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Create the layered effect behind the resume */
+.resume-background::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 100%;
+  background-color: #cfcfcf; /* Slightly darker gray background */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+/* Resume Container (Main Content Box) */
+.resume-container {
+  background-color: white;
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+  text-align: left; /* Keeps text aligned left while container remains centered */
+}
+
+/* Resume Content */
+.resume-container h1 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  border-bottom: 2px solid rgb(0, 157, 255);
+  padding-bottom: 5px;
+}
+
+.resume-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.lists {
+  padding-left: 20px;
+}
+
+.lists li {
+  margin-bottom: 5px;
+}
+
+/* Project & Labs */
+dl dt p {
+  font-weight: 400;
+}
+#projects-labs dl {
+  margin: 15px 0;
+}
+
+#projects-labs dt {
+  font-weight: bold;
+}
+
+#projects-labs dd a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#projects-labs dd a:hover {
+  text-decoration: underline;
+}
+
+/* Tablet & Desktop View (768px and larger) */
+@media screen and (min-width: 768px) {
+  .body-container-resume {
+    padding-top: 100px; /* Adjusted for desktop */
+  }
+
+  .resume-container {
+    width: 80%;
+    padding: 50px;
+  }
+
+  .resume-background::before {
+    width: 85%;
+  }
+}
+
+/* Resources Page Styling */
+.body-container-resources {
+  width: 100%;
+  max-width: 100%;
+  margin: 50% auto 0; /* Push content below navbar */
+  padding: 15px;
+  background-color: #f4f4f4; /* Light background color */
+  text-align: center;
+}
+
+/* Container for iframes */
+.iframe-container {
+  display: block;
+  margin: 20px auto;
+  text-align: center; /* Centers content */
+}
+
+/* Each video wrapper */
+.iframe-wrapper {
+  width: 100%; /* Full width in mobile */
+  margin-bottom: 20px;
+}
+
+/* Ensure iframes are responsive */
+.iframe-wrapper iframe {
+  width: 100%;
+  max-width: 560px; /* Keeps iframes within the standard width */
+  height: 315px;
+  border-radius: 8px;
+}
+
+/* Free Tutorial Sites */
+.body-container-resources ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.body-container-resources ul li {
+  margin-bottom: 10px;
+}
+
+/* Tablet & Desktop View (768px and larger) */
+@media screen and (min-width: 768px) {
+  .iframe-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .iframe-wrapper {
+    width: 30%; /* Each video takes up about a third of the container */
+    min-width: 280px;
+    margin: 10px;
+  }
+
+  .body-container-resources {
+    width: 100%;
+    max-width: 100%;
+    margin: 15% auto 0; /* Push content below navbar */
+    padding: 15px;
+    background-color: #f4f4f4; /* Light background color */
+    text-align: center;
+  }
+}
