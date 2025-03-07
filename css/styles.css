@@ -70,7 +70,7 @@
 /* Ensure body content starts below navbar */
 .body-container {
   padding: 0 15px;
-  margin-top: 60%; /* Always pushes content below the navbar */
+  margin-top: 75%; /* Always pushes content below the navbar */
 }
 
 /* Tablet & Desktop View (768px and larger) */
